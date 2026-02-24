@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+.venv12/
+
+# Mimir data (local runtime state)
+mimir_data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# pyenv
+.python-version
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
