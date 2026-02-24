@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mimir-memory"
+version = "0.1.0"
+description = "Zero-server, in-process agentic memory system for LLM agents — Zvec + SQLite + LangGraph"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Arjun Subburaj", email = "arjun@junainfinity.com" },
+]
+keywords = ["llm", "memory", "agent", "vector-search", "zvec", "bitemporal", "langgraph"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "langchain-core>=1.2.0",
+    "langchain-openai>=1.0.0",
+    "langchain-huggingface>=1.2.0",
+    "langgraph>=1.0.0",
+    "sentence-transformers>=5.0.0",
+]
+
+[project.optional-dependencies]
+zvec = ["zvec>=0.2.0"]
+dev = ["build", "twine", "pytest"]
+all = ["zvec>=0.2.0", "build", "twine", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/junainfinity/Mimir"
+Repository = "https://github.com/junainfinity/Mimir"
+Documentation = "https://github.com/junainfinity/Mimir/blob/main/PROSPECTUS.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mimir"]
