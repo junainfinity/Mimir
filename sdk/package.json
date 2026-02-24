@@ -1,0 +1,33 @@
+{
+    "name": "mimir-memory",
+    "version": "0.1.0",
+    "description": "TypeScript/JavaScript SDK for the Mimir agentic memory system — archive and search with bitemporal guarantees",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "llm",
+        "memory",
+        "agent",
+        "vector-search",
+        "bitemporal",
+        "ai"
+    ],
+    "author": "Arjun Subburaj",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/junainfinity/Mimir"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.0"
+    }
+}

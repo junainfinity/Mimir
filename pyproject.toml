@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mimir-memory"
-version = "0.1.0"
+version = "0.2.0"
 description = "Zero-server, in-process agentic memory system for LLM agents — Zvec + SQLite + LangGraph"
 readme = "README.md"
 license = "MIT"
@@ -34,13 +34,20 @@ dependencies = [
 
 [project.optional-dependencies]
 zvec = ["zvec>=0.2.0"]
+server = ["fastapi>=0.115.0", "uvicorn>=0.34.0"]
 dev = ["build", "twine", "pytest"]
-all = ["zvec>=0.2.0", "build", "twine", "pytest"]
+all = ["zvec>=0.2.0", "fastapi>=0.115.0", "uvicorn>=0.34.0", "build", "twine", "pytest"]
+
+[project.scripts]
+mimir-server = "mimir.server:main"
 
 [project.urls]
 Homepage = "https://github.com/junainfinity/Mimir"
 Repository = "https://github.com/junainfinity/Mimir"
 Documentation = "https://github.com/junainfinity/Mimir/blob/main/PROSPECTUS.md"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["sdk/", "examples/", "mimir_data/", ".venv*/"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["mimir"]
