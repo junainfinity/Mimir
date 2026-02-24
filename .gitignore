@@ -2,6 +2,10 @@
 .venv/
 .venv12/
 
+# Node
+node_modules/
+sdk/dist/
+
 # Mimir data (local runtime state)
 mimir_data/
 
