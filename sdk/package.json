@@ -1,6 +1,6 @@
 {
     "name": "mimir-memory",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "TypeScript/JavaScript SDK for the Mimir agentic memory system — archive and search with bitemporal guarantees",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

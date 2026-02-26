@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mimir-memory"
-version = "0.2.0"
+version = "0.3.0"
 description = "Zero-server, in-process agentic memory system for LLM agents — Zvec + SQLite + LangGraph"
 readme = "README.md"
 license = "MIT"
