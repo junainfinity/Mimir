@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/junainfinity/Mimir/main/assets/banner.jpg" alt="Mimir — The Well of Knowledge, Rewritten" width="100%">
+</p>
+
 # mimir-memory (npm)
 
 > TypeScript/JavaScript SDK for the [Mimir](https://github.com/junainfinity/Mimir) agentic memory system.

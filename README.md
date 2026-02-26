@@ -1,5 +1,10 @@
 <p align="center">
+  <img src="./assets/banner.jpg" alt="Mimir — The Well of Knowledge, Rewritten" width="100%">
+</p>
+
+<p align="center">
   <h1 align="center">Mimir</h1>
+  <p align="center"><em>The Well of Knowledge, Rewritten.</em></p>
   <p align="center"><em>A zero-server, in-process agentic memory system for LLM agents.</em></p>
 </p>
 
