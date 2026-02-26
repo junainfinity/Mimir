@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.jpg" alt="Mimir — The Well of Knowledge, Rewritten" width="100%">
+  <img src="https://raw.githubusercontent.com/junainfinity/Mimir/main/assets/banner.jpg" alt="Mimir — The Well of Knowledge, Rewritten" width="100%">
 </p>
 
 <p align="center">

@@ -10,5 +10,5 @@ from mimir.tools import create_tools
 from mimir.graph import create_agent
 from mimir.optimizer import optimize_trajectory
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 __all__ = ["MimirStorage", "create_tools", "create_agent", "optimize_trajectory"]
